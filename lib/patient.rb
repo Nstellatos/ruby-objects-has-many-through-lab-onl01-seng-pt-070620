@@ -18,7 +18,7 @@ end
   end
 
   def doctors
-    self.appointments.collect {|appointment| appointment.doctor}
+    self.appointments.collect do |appointment| appointment.doctor
   end 
 end
   
