@@ -23,10 +23,10 @@ class Doctor
       
 end
 
-  def patients
-   self.appointments.collect do |appointment|
-      appointment.patient
-    end.uniq
+  def patients 
+    appointments.map do |appt|
+      appt.patient
+    end
   end
 
 end
